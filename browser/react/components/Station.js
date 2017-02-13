@@ -21,12 +21,12 @@ function Station (props) {
     console.log('inside Station component; props= ', props);
     return (
         <div>
-            <h3>{ props.routeParams.genreName } Station</h3>
+            <h3>{ props.genreName } Station</h3>
             <Songs 
             songs={props.songs}
             currentSong={props.currentSong}
             isPlaying={props.isPlaying}
-            toggleOne={() => {}}
+            toggleOne={props.toggleOne}
             />
         </div>
     );
