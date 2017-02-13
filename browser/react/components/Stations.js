@@ -7,7 +7,8 @@ const DUMMY_STATIONS_DATA = [
   { name: 'Classical' }
 ];
 
-function Stations () {
+function Stations (props) {
+    console.log(props);
     return (
         <div>
             <h3>Stations</h3>
